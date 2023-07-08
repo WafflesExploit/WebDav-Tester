@@ -8,7 +8,7 @@
 
 ## Installation
  ```
- $ git clone https://github.com/WafflesExploit/SMTP-MX-Enumerator
+ $ git clone https://github.com/WafflesExploit/HTTPMethodChecker
  ```
 
 ## Example Usage
