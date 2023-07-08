@@ -1,4 +1,4 @@
-# HTTP-Method-Checker
+# HTTPMethodChecker
  ### -> Checks if the specified HTTP methods are allowed for each URL present in the provided wordlist. Usage example: Finding URLs with the PUT method to upload malicious files.
 ## Table of Contents
 * [Installation](#installation)
