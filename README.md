@@ -1,4 +1,4 @@
-# WebDav-Tester
+# WebDavTester
  ### -> Checks for exploitable HTTP methods for each URL present in the provided wordlist. Also, automates davtest to check for WebDav Vulnerabilities
 ## Table of Contents
 * [Installation](#installation)
