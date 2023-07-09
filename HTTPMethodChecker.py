@@ -10,12 +10,11 @@ from datetime import datetime
 
 parser = argparse.ArgumentParser(description='-> Checks if the specified HTTP methods are allowed for each URL present in the provided wordlist. \n -> Usage example: Finding URLs with the PUT method to upload malicious files.')
 parser.add_argument('-w', '--wordlist', type=str, help="Wordlist containing the URLs to scan.")
-parser.add_argument('-m', '--methods', type=str, help="Specifies the HTTP methods to search for. Example: 'PUT,OPTIONS,POST'")
+parser.add_argument('-m', '--methods', type=str, nargs='?', default='PUT,DELETE,COPY,MOVE,SEARCH,PROPFIND',help="Specifies the HTTP methods to search for. Default: 'PUT,DELETE,COPY,MOVE,SEARCH,PROPFIND'")
 parser.add_argument('-o', '--output', type=str, nargs='?',help="Outputs results to a file.")
-
 NumberOfArgs = len(sys.argv)
 
-if(NumberOfArgs<=3): # If there is only one argument or less, prints out the Script's Usage.
+if(NumberOfArgs<=2): # If there is only one argument or less, prints out the Script's Usage.
 	parser.print_help()
 	sys.exit()
 
@@ -66,6 +65,7 @@ print("| By (https://github.com/WafflesExploit)")
 NumberOfMatches = 0
 print("|")
 print("| Results: ")
+file = open(Output, "w+")
 for URLs in URLWordlist:
 	data = cmd(f"curl -X OPTIONS {URLs} -i") # Runs the curl command for every URL in the URLWordlist
 	
@@ -81,15 +81,21 @@ for URLs in URLWordlist:
 		print(f"| - HTTP Methods found: ", end=" ")
 		MethodsList = (", ".join(methodus))
 		print(MethodsList) # Use the join() method to concatenate the methods with a comma separator
-		if (Output is not None):
-			with open(f'{Output}', "w") as f: # Opens and automatically closes the passwordfile.
-				f.writelines(f"{URLs} - {MethodsList}")
-		print("| ")
-		print(f"| Results have been outputted to: {Output}.")
+		if (Output is not None): 
+			file.write(f"{URLs} - {MethodsList}\n")
+
+file.close()
+			
+				
+
 			
 	
 if (NumberOfMatches == 0):
 	print("| - No Methods were found -")
+else:
+	print("| ")
+	print(f"| Results have been outputted to: {Output}.")
+
 print("|")
 EndTime = time.time()
 RunTime = EndTime - StartTime
