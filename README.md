@@ -1,5 +1,5 @@
-# HTTPMethodChecker
- ### -> Checks if the specified HTTP methods are allowed for each URL present in the provided wordlist. Usage example: Finding URLs with the PUT method to upload malicious files.
+# WebDav Tester
+ ### -> Checks for exploitable HTTP methods for each URL present in the provided wordlist. Also, automates davtest to check for WebDav Vulnerabilities
 ## Table of Contents
 * [Installation](#installation)
 * [Example Usage](#Example-Usage)
@@ -49,6 +49,7 @@ options:
                         Outputs results to a file.
 ```
 
-## Contact
+## Credits
+davtest - https://github.com/cldrn/davtest
 Created by [@WafflesExploit](https://github.com/WafflesExploit) - feel free to contact me!
 
