@@ -14,8 +14,8 @@
 
 ## Example Usage
 ```
-$ py.exe .\HTTPMethodChecker.py -w urltest.txt -m 'PUT,OPTIONS,POST' -o output.txt
-* Starting HTTP Method Checker at 2023-07-08 16:51:03.
+$ python ./HTTPMethodChecker.py -w urltest.txt -m 'PUT,OPTIONS,POST' -o output.txt
+* Starting HTTP Method Checker at 2023-11-21 16:32:44.
 | 
 | Settings:
 | Wordlist: urltest.txt | HTTP Methods: PUT,OPTIONS,POST
@@ -25,11 +25,13 @@ $ py.exe .\HTTPMethodChecker.py -w urltest.txt -m 'PUT,OPTIONS,POST' -o output.t
 |
 | Results: 
 | URL: http://example.com/ 
-| - HTTP Methods found:  OPTIONS, POST       
+| - HTTP Methods found:  OPTIONS, POST
+| URL: http://www.itsecgames.com/  
+| - HTTP Methods found:  POST, OPTIONS
 | 
 | Results have been outputted to: output.txt.
 |
-* Finished scan in 0.310s.
+* Finished scan in 0.849s.
 ```
 
 ## Usage
