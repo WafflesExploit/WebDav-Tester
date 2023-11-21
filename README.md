@@ -1,5 +1,6 @@
 # HTTPMethodChecker
- ### -> Checks for exploitable HTTP methods for each URL present in the provided wordlist. Also, automates davtest to check for WebDav Vulnerabilities
+ ### -> Checks if the specified HTTP methods are allowed for each URL present in the provided wordlist.
+ ### -> Usage example: Finding URLs with the PUT method to upload malicious files.
 ## Table of Contents
 * [Installation](#installation)
 * [Example Usage](#Example-Usage)
@@ -36,8 +37,8 @@ $ py.exe .\HTTPMethodChecker.py -w urltest.txt -m 'PUT,OPTIONS,POST' -o output.t
 ./HTTPMethodChecker.py -h                    
 usage: HTTPMethodChecker.py [-h] [-w WORDLIST] [-m [METHODS]] [-o [OUTPUT]]
 
--> Checks if the specified HTTP methods are allowed for each URL present in the provided wordlist. -> Usage example: Finding URLs with    
-the PUT method to upload malicious files.
+-> Checks if the specified HTTP methods are allowed for each URL present in the provided wordlist.
+-> Usage example: Finding URLs with the PUT method to upload malicious files.
 
 options:
   -h, --help            show this help message and exit
