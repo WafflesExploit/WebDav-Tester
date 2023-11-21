@@ -51,6 +51,5 @@ options:
 ```
 
 ## Credits
-davtest - https://github.com/cldrn/davtest
 Created by [@WafflesExploit](https://github.com/WafflesExploit) - feel free to contact me!
 
