@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Created by https://github.com/WafflesExploit
+# Created by https://github.com/WafflesExploits
 import subprocess
 import re
 import sys
@@ -60,7 +60,7 @@ print("| Settings:")
 print(f"| Wordlist: {Wordlist} | HTTP Methods: {Methods}")
 print("|")
 print("| Credits:")
-print("| By (https://github.com/WafflesExploit)")
+print("| By (https://github.com/WafflesExploits)")
 
 NumberOfMatches = 0
 print("|")
