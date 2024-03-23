@@ -9,7 +9,7 @@
 
 ## Installation
  ```
- $ git clone https://github.com/WafflesExploit/HTTPMethodChecker
+ $ git clone https://github.com/WafflesExploits/HTTPMethodChecker
  ```
 
 ## Example Usage
@@ -21,7 +21,7 @@ $ python ./HTTPMethodChecker.py -w urltest.txt -m 'PUT,OPTIONS,POST' -o output.t
 | Wordlist: urltest.txt | HTTP Methods: PUT,OPTIONS,POST
 |
 | Credits:
-| By (https://github.com/WafflesExploit)
+| By (https://github.com/WafflesExploits)
 |
 | Results: 
 | URL: http://example.com/ 
